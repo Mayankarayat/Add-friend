@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://images.unsplash.com/photo-1615304048636-47fa618f3744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="">
+            <h1>Rory</h1>
+            <h2>Stranger</h2>
+            <div class="btn">
+                <button id="add"> Add Friend</button>
+            <button id="remove">Remove Friend</button>
+            </div>
+            
+    </div>
+</body>
+
+<script>
+    let check = document.querySelector("h2");
+    
+    let friend = document.querySelector("#add");
+
+    let remove = document.querySelector("#remove")
+
+    friend.addEventListener("click",function(){
+        check.innerHTML = "Friends"
+        check.style.color = "Green"
+        friend.innerHTML = "Friends"
+        // remove.style.display = ""
+    })
+
+    remove.addEventListener("click",function(){
+        check.innerHTML = "Strangers"
+        check.style.color = "red"
+        friend.innerHTML = "Add Friends"
+    })
+</script>
+
+</html>
